@@ -14,7 +14,7 @@ sops:
     age:
         - recipient: age1hmvep6d2673tugwpneaj3v5hkc4rlqq4f7z6an6lxapnp7qfvyzqc0zlhl
           enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
+            -----BEGIN AGE ENCRYPTED FILE---
             YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaVVZCZXVVZmg5Sm5qbktR
             OWlCUi9XbHNNUXBUTkFUSmR2b3lXdEt1MkNzCnZmVk5KWEJjbHVpbHFNa2ltNUdL
             UmpLcnRuMXBLaWJFN0tvZnlXZWQzd1EKLS0tIEt3blgzZmZhVDkySlovOFlkYktP
