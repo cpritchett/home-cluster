@@ -14,7 +14,7 @@ clusterSvcNets:
 additionalApiServerCertSans: &sans
   - "192.168.1.136"
   - 127.0.0.1 # KubePrism
-  - "flotilla"
+  - "flotilla flotilla.local flotilla.hypyr.space"
 additionalMachineCertSans: *sans
 
 # Disable built-in Flannel to use Cilium
