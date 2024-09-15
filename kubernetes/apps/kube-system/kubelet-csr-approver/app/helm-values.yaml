@@ -1,0 +1,3 @@
+---
+providerRegex: ^(flotilla01|flotilla02|flotilla03)$
+bypassDnsResolution: true
