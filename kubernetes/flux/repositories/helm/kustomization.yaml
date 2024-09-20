@@ -15,4 +15,4 @@ resources:
   - ./external-dns.yaml
   - ./ingress-nginx.yaml
   - ./k8s-gateway.yaml
-  - ./external-dns.yaml
+  - ./external-secrets.yaml
