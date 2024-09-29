@@ -6,3 +6,46 @@ metadata:
   namespace: flux-system
 data:
   SETTING_EXAMPLE: Global settings for your cluster go in this file, this file is NOT encrypted
+  TIMEZONE: America/Chicago
+
+  # Domains
+  PUBLIC_DOMAIN: hypyr.space
+  INTERNAL_DOMAIN: int.hypyr.space
+
+  # Email
+  PUBLIC_EMAIL: admin@hypyr.space
+
+  # # Storage
+  # CLUSTER_STORAGE_BLOCK: ceph-block
+  # CLUSTER_SNAPSHOT_BLOCK: csi-ceph-block
+  # CLUSTER_STORAGE_FILESYSTEM: ceph-filesystem
+  # CLUSTER_SNAPSHOT_FILESYSTEM: csi-ceph-filesystem
+  # CLUSTER_STORAGE_BUCKET: ceph-bucket
+  # CLUSTER_STORAGE_HOSTPATH: democratic-csi-local-hostpath
+  # CLUSTER_SNAPSHOT_HOSTPATH: csi-democratic-csi-local-hostpath
+
+  # # K8s
+  # CLUSTER_POD_CIDR: 10.244.0.0/16
+  # CLUSTER_SERVICE_CIDR: 10.245.0.0/16
+
+  # # Networks
+  # NET_LOCAL_CIDR: 192.168.0.0/24
+  # NET_TRUSTED_CIDR: 192.168.1.0/24
+  # NET_SERVERS_CIDR: 192.168.10.0/24
+  # NET_SERVICES_CIDR: 192.168.20.0/24
+  # NET_IOT_CIDR: 192.168.30.0/24
+  # NET_GUEST_CIDR: 192.168.40.0/24
+  # NET_THUNDERBOLT_CIDR: 169.254.255.0/24
+
+  # # Gateways
+  # NET_LOCAL_GATEWAY_IP: 192.168.0.1
+  # NET_IOT_GATEWAY_IP: 192.168.30.1
+
+  # # Services
+  # NET_SERVICES_VECTOR_IP: 192.168.20.2
+  # NET_SERVICES_QBITTORRENT_IP: 192.168.20.3
+  # NET_SERVICES_INGRESS_IP_EXT: 192.168.20.80
+  # NET_SERVICES_INGRESS_IP_INT: 192.168.20.81
+
+  # # Shh :-)
+  # NET_SERVICES_QBITTORRENT_PORT: "50413"
