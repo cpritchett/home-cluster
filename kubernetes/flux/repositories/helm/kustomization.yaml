@@ -25,7 +25,7 @@ resources:
   - ./metrics-server.yaml
 #  - ./node-feature-discovery.yaml
   - ./openebs.yaml
-#  - ./piraeus.yaml
+  - ./piraeus.yaml
   - ./postfinance.yaml
   - ./prometheus-community.yaml
 #  - ./rook-ceph.yaml
