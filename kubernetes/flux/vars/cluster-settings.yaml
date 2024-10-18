@@ -27,6 +27,9 @@ data:
   VOLSYNC_CACHE_SNAPSHOTCLASS: openebs-hostpath
   VOLSYNC_STORAGECLASS: openebs-hostpath
 
+  # # S3
+  S3_ENDPOINT: https://s3.hypyr.space
+
 
   # # K8s
   # CLUSTER_POD_CIDR: 10.244.0.0/16
