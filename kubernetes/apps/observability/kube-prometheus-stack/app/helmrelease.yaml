@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: kube-prometheus-stack
-      version: 65.1.1
+      version: 66.2.1
       sourceRef:
         kind: HelmRepository
         name: prometheus-community
@@ -38,7 +38,7 @@ spec:
       ingress:
         enabled: true
         annotations:
-          external-dns.alpha.kubernetes.io/target: internal.{{PUBLIC_DOMAIN}}
+          external-dns.alpha.kubernetes.io/target: internal.${PUBLIC_DOMAIN}
         ingressClassName: internal
         hosts: ["alertmanager.hypyr.space"]
         pathType: Prefix
@@ -72,7 +72,7 @@ spec:
       ingress:
         enabled: true
         annotations:
-          external-dns.alpha.kubernetes.io/target: internal.{{PUBLIC_DOMAIN}}
+          external-dns.alpha.kubernetes.io/target: internal.${PUBLIC_DOMAIN}
         ingressClassName: internal
         hosts: ["prometheus.hypyr.space"]
         pathType: Prefix

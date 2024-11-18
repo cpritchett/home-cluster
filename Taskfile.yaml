@@ -6,6 +6,7 @@ vars:
   # Directories
   BOOTSTRAP_DIR: "{{.ROOT_DIR}}/bootstrap"
   KUBERNETES_DIR: "{{.ROOT_DIR}}/kubernetes"
+  VOLSYNC_DIR: "{{.ROOT_DIR}}/volsync"
   PRIVATE_DIR: "{{.ROOT_DIR}}/.private"
   SCRIPTS_DIR: "{{.ROOT_DIR}}/scripts"
   # Files
@@ -17,6 +18,10 @@ vars:
   SOPS_CONFIG_FILE: "{{.ROOT_DIR}}/.sops.yaml"
   # Binaries
   PYTHON_BIN: python3
+  # Cluster
+  CLUSTER: '{{.CLUSTER | default "home-cluster"}}'
+  CLUSTER_DIR: '{{.ROOT_DIR}}/kubernetes/}}'
+
 
 env:
   KUBECONFIG: "{{.KUBECONFIG_FILE}}"
@@ -27,6 +32,7 @@ env:
 includes:
   kubernetes: .taskfiles/Kubernetes
   flux: .taskfiles/Flux
+  volsync: .taskfiles/volsync
   repository: .taskfiles/Repository
   talos: .taskfiles/Talos
   sops: .taskfiles/Sops
