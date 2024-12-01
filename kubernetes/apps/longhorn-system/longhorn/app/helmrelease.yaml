@@ -22,8 +22,11 @@ spec:
         ingress:
           enabled: true
           ingressClassName: internal
-          hosts: ["longhorn.hypyr.space"]
-          pathType: Prefix
+          hosts:
+            - host: longhorn.hypyr.space
+              paths:
+                - path: /
+                  pathType: Prefix
           annotations:
             external-dns.alpha.kubernetes.io/target: internal.${PUBLIC_DOMAIN}
             # gethomepage.dev/enabled: "true"
