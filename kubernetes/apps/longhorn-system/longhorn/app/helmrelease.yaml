@@ -22,7 +22,7 @@ spec:
         ingress:
           enabled: true
           ingressClassName: internal
-          hosts: ["longhorn.${SECRET_DOMAIN}"]
+          hosts: ["longhorn.${PUBLIC_DOMAIN}"]
           pathType: Prefix
           annotations:
             external-dns.alpha.kubernetes.io/target: internal.${PUBLIC_DOMAIN}
