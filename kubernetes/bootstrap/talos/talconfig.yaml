@@ -25,7 +25,7 @@ nodes:
   - hostname: "flotilla01"
     ipAddress: "192.168.1.84"
     installDisk: "/dev/sda"
-    talosImageURL: factory.talos.dev/installer/58e4656b31857557c8bad0585e1b2ee53f7446f4218f3fae486aa26d4f6470d8
+    talosImageURL: factory.talos.dev/installer/4e563b64bfde5f57ef0b4ad89a4846190b9aa33d882774dab954a8ea3338e9b4
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -42,7 +42,7 @@ nodes:
   - hostname: "flotilla02"
     ipAddress: "192.168.1.100"
     installDisk: "/dev/sda"
-    talosImageURL: factory.talos.dev/installer/58e4656b31857557c8bad0585e1b2ee53f7446f4218f3fae486aa26d4f6470d8
+    talosImageURL: factory.talos.dev/installer/4e563b64bfde5f57ef0b4ad89a4846190b9aa33d882774dab954a8ea3338e9b4
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -59,11 +59,11 @@ nodes:
   - hostname: "flotilla03"
     ipAddress: "192.168.1.104"
     installDisk: "/dev/sda"
-    talosImageURL: factory.talos.dev/installer/58e4656b31857557c8bad0585e1b2ee53f7446f4218f3fae486aa26d4f6470d8
+    talosImageURL: factory.talos.dev/installer/4e563b64bfde5f57ef0b4ad89a4846190b9aa33d882774dab954a8ea3338e9b4
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "bc:24:11:7c:91:ba"
+          hardwareAddr: "BC:24:11:86:3E:45"
         dhcp: false
         addresses:
           - "192.168.1.104/24"
