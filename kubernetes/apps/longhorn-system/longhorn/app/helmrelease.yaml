@@ -20,7 +20,7 @@ spec:
     values:
         enablePSP: false
         ingress:
-          enabled: true
+          enabled: false
           ingressClassName: internal
           hosts: ["longhorn.hypyr.space"]
           pathType: Prefix
