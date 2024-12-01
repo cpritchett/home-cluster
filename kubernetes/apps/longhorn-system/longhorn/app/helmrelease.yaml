@@ -50,4 +50,13 @@ spec:
                 effect: "NoSchedule"
                 value:
         defaultSettings:
-            taintToleration: "CriticalAddonsOnly:NoSchedule"
+          createDefaultDiskLabeledNodes: true
+          taintToleration: "CriticalAddonsOnly:NoSchedule"
+          kubernetesClusterAutoscalerEnabled: true # if autoscaler is active in the cluster
+          defaultDataPath: /var/lib/longhorn
+          # ensure pod is moved to an healthy node if current node is down:
+          node-down-pod-deletion-policy: delete-both-statefulset-and-deployment-pod
+        persistence:
+          defaultClass: true
+          defaultFsType: ext4
+          defaultClassReplicaCount: 3

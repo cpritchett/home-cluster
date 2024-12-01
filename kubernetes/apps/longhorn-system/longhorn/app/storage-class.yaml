@@ -1,10 +1,29 @@
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
-  name: longhorn-ssd
+  name: longhorn-fast
 provisioner: driver.longhorn.io
 allowVolumeExpansion: true
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
 parameters:
   numberOfReplicas: "3"
-  staleReplicaTimeout: "480" # 8 hours in minutes
-  diskSelector: "ssd"
+  staleReplicaTimeout: "2880" # 48 hours in minutes
+  fromBackup: ""
+  fsType: "ext4"
+  diskSelector: "nvme"
+---
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: longhorn-fast-2
+provisioner: driver.longhorn.io
+allowVolumeExpansion: true
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+parameters:
+  numberOfReplicas: "2"
+  staleReplicaTimeout: "2880" # 48 hours in minutes
+  fromBackup: ""
+  fsType: "ext4"
+  diskSelector: "nvme"
