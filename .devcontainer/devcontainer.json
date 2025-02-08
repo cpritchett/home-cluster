@@ -1,0 +1,46 @@
+{
+  "name": "Home Cluster",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {
+          "installZsh": true,
+          "installOhMyZsh": true,
+          "upgradePackages": true
+      },
+      "ghcr.io/devcontainers/features/git:1": {},
+      "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "curl https://mise.run | sh && echo 'eval \"$(~/.local/bin/mise activate zsh)\"' >> ~/.zshrc",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "ms-python.python",
+              "ms-python.vscode-pylance",
+              "samuelcolvin.jinjahtml",
+              "trunk.io",
+              "tudoudou.json5-for-vscode",
+              "github.vscode-github-actions",
+              "github.copilot",
+              "github.copilot-chat",
+              "github.copilot-labs",
+              "github.actions",
+              "EditorConfig.EditorConfig",
+              "Gruntfuggly.todo-tree",
+              "albert.TabOut",
+              "mitchdenny.ecdc",
+              "fcrespo82.markdown-table-formatter",
+              "signageos.signageos-vscode-sops"
+          ],
+          "settings": {
+              "python.defaultInterpreterPath": ".venv/bin/python",
+              "python.formatting.provider": "none",
+              "editor.formatOnSave": true,
+              "[python]": {
+                  "editor.defaultFormatter": "trunk.io",
+                  "editor.formatOnSave": true
+              }
+          }
+      }
+  },
+  "remoteUser": "vscode"
+}
